@@ -1,0 +1,370 @@
+2025-06-28 00:54:22 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 108
+Stack Trace:
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:173
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:474
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\CakeAdapter.php:53
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:66
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:88
+- C:\laragon\www\esls\vendor\symfony\console\Command\Command.php:326
+- C:\laragon\www\esls\vendor\symfony\console\Application.php:1078
+- C:\laragon\www\esls\vendor\symfony\console\Application.php:324
+- C:\laragon\www\esls\vendor\symfony\console\Application.php:175
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:131
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:203
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 96
+Stack Trace:
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:96
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:173
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:474
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\CakeAdapter.php:53
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- C:\laragon\www\esls\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:66
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:88
+- C:\laragon\www\esls\vendor\symfony\console\Command\Command.php:326
+- C:\laragon\www\esls\vendor\symfony\console\Application.php:1078
+- C:\laragon\www\esls\vendor\symfony\console\Application.php:324
+- C:\laragon\www\esls\vendor\symfony\console\Application.php:175
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:131
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:203
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-28 01:14:12 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.leavetypes' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 158
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.leavetypes' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:282
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:156
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-28 01:14:52 error: [ParseError] syntax error, unexpected identifier "type" in C:\laragon\www\esls\src\Controller\Admin\LeaveTypesController.php on line 285
+Stack Trace:
+- C:\laragon\www\esls\vendor\composer\ClassLoader.php:427
+- [internal]:??
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:249
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-28 01:19:02 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.leave_types' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 158
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.leave_types' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:282
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:156
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-28 01:21:06 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.leave_types' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 158
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.leave_types' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:282
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:156
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-28 01:22:47 error: [ParseError] syntax error, unexpected identifier "type" in C:\laragon\www\esls\src\Controller\Admin\LeaveTypesController.php on line 285
+Stack Trace:
+- C:\laragon\www\esls\vendor\composer\ClassLoader.php:427
+- [internal]:??
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:249
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-28 01:23:14 error: [ParseError] syntax error, unexpected identifier "type" in C:\laragon\www\esls\src\Controller\Admin\LeaveTypesController.php on line 285
+Stack Trace:
+- C:\laragon\www\esls\vendor\composer\ClassLoader.php:427
+- [internal]:??
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:249
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-28 01:34:41 error: [ParseError] syntax error, unexpected identifier "type" in C:\laragon\www\esls\src\Controller\LeaveTypesController.php on line 283
+Stack Trace:
+- C:\laragon\www\esls\vendor\composer\ClassLoader.php:427
+- [internal]:??
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:249
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-28 01:42:35 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.leavetypes' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 158
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.leavetypes' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:282
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:156
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-06-30 17:16:19 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.table_name' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 158
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.table_name' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:282
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:156
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-07-01 07:22:08 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.table_name' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 158
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'esls.table_name' doesn't exist in C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Driver.php:282
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:156
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-07-16 22:38:41 error: [ParseError] syntax error, unexpected identifier "holiday" in C:\laragon\www\esls\src\Controller\Admin\PublicHolidaysController.php on line 285
+Stack Trace:
+- C:\laragon\www\esls\vendor\composer\ClassLoader.php:427
+- [internal]:??
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:249
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-07-17 01:17:11 error: [ParseError] syntax error, unexpected identifier "holiday" in C:\laragon\www\esls\src\Controller\Admin\PublicHolidaysController.php on line 285
+Stack Trace:
+- C:\laragon\www\esls\vendor\composer\ClassLoader.php:427
+- [internal]:??
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:249
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-07-17 02:00:28 error: [ParseError] syntax error, unexpected identifier "holiday" in C:\laragon\www\esls\src\Controller\PublicHolidaysController.php on line 283
+Stack Trace:
+- C:\laragon\www\esls\vendor\composer\ClassLoader.php:427
+- [internal]:??
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:249
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+
+2025-07-17 02:20:36 error: [ParseError] syntax error, unexpected identifier "holiday" in C:\laragon\www\esls\src\Controller\Admin\PublicHolidaysController.php on line 285
+Stack Trace:
+- C:\laragon\www\esls\vendor\composer\ClassLoader.php:427
+- [internal]:??
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:249
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\laragon\www\esls\vendor\cakephp\bake\src\Command\AllCommand.php:115
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\laragon\www\esls\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\laragon\www\esls\bin\cake.php:10
+- [main]:
+

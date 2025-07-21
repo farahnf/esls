@@ -1,0 +1,13 @@
+parameters:
+	level: 8
+	paths:
+		- src/
+
+	checkMissingIterableValueType: false
+	checkGenericClassInNonGenericObjectType: false
+	bootstrapFiles:
+		- tests/bootstrap.php
+		- tests/shim.php
+	excludePaths:
+		- %rootDir%/../../../src/Filesystem/File.php
+	ignoreErrors:

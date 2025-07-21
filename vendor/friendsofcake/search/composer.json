@@ -1,0 +1,68 @@
+{
+    "name": "friendsofcake/search",
+    "description": "CakePHP Search plugin using PRG pattern",
+    "license": "MIT",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "cakephp",
+        "prg",
+        "filter",
+        "search"
+    ],
+    "authors": [
+        {
+            "name": "Christian Winther",
+            "role": "Author"
+        },
+        {
+            "name": "ADmad",
+            "homepage": "https://github.com/admad",
+            "role": "Contributor"
+        }
+    ],
+    "homepage": "https://github.com/FriendsOfCake/search",
+    "support": {
+        "issues": "https://github.com/FriendsOfCake/search/issues",
+        "source": "https://github.com/FriendsOfCake/search"
+    },
+    "require": {
+        "php": ">=8.1",
+        "cakephp/cakephp": "^5.0"
+    },
+    "require-dev": {
+        "cakephp/bake": "^3.0",
+        "cakephp/cakephp-codesniffer": "^5.0",
+        "cakephp/twig-view": "^2.0",
+        "phpunit/phpunit": "^10.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Search\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cake\\Test\\Fixture\\": "vendor/cakephp/cakephp/tests/Fixture/",
+            "Search\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs -p src/ tests/",
+        "cs-fix": "phpcbf src/ tests/",
+        "phpstan": "tools/phpstan analyse",
+        "psalm": "tools/psalm --show-info=false",
+        "stan": [
+            "@phpstan",
+            "@psalm"
+        ],
+        "stan-baseline": "tools/phpstan --generate-baseline",
+        "stan-setup": "phive install",
+        "stan-tests": "tools/phpstan analyze -c tests/phpstan.neon",
+        "test": "phpunit"
+    }
+}
